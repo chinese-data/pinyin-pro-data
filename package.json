@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/chinese-data/pinyin-pro-data/issues"
   },
-  "homepage": "https://github.com/chinese-data/pinyin-pro-data#readme"
+  "homepage": "https://github.com/chinese-data/pinyin-pro-data#readme",
+  "devDependencies": {
+    "crypto": "^1.0.1",
+    "querystring": "^0.2.1"
+  }
 }
