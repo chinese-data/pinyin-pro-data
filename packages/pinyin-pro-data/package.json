@@ -1,0 +1,28 @@
+{
+  "name": "@pinyin-pro/data",
+  "version": "0.0.1-beta.1",
+  "description": "The data directory for pinyin-pro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinese-data/pinyin-pro-data.git"
+  },
+  "exports": {
+    "./jieba.json": "./jieba.json",
+    "./modern.json": "./modern.json",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinese-data/pinyin-pro-data/issues"
+  },
+  "homepage": "https://github.com/chinese-data/pinyin-pro-data#readme"
+}
