@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path= require('path');
 const { parse } = require('node-html-parser');
-const jieba = require('../data/jieba.json')
+const jieba = require('../data/complete.json')
 
 const modernDictPath = path.resolve(__dirname, '../data/现代汉语词典.txt');
 const modernDict = fs.readFileSync(modernDictPath, 'utf-8');
