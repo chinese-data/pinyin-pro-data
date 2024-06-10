@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/chinese-data/pinyin-pro-data#readme",
   "devDependencies": {
+    "@types/node": "^20.14.1",
     "crypto": "^1.0.1",
     "jsdom": "^24.0.0",
     "node-html-parser": "^6.1.13",
-    "querystring": "^0.2.1"
+    "querystring": "^0.2.1",
+    "ts-node": "^10.9.2"
   }
 }

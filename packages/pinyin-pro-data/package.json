@@ -1,6 +1,6 @@
 {
   "name": "@pinyin-pro/data",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "The data directory for pinyin-pro",
   "main": "index.js",
   "scripts": {
