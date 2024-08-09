@@ -23,7 +23,7 @@ pnpm add @pinyin-pro/data
 使用扩展字典：
 
 ```js
-import CharsDict from '@pinyin-pro/data/chars.json';
+import CharsDict from '@pinyin-pro/data/chars';
 import { addDict } from 'pinyin-pro';
 
 addDict(CharsDict);
@@ -33,7 +33,7 @@ addDict(CharsDict);
 
 ```js
 import { addDict } from 'pinyin-pro';
-import CompleteDict from '@pinyin-pro/data/complete.json';
+import CompleteDict from '@pinyin-pro/data/complete';
 addDict(CompleteDict);
 ```
 
@@ -41,6 +41,6 @@ addDict(CompleteDict);
 
 ```js
 import { addDict } from 'pinyin-pro';
-import ModernDict from '@pinyin-pro/data/modern.json';
+import ModernDict from '@pinyin-pro/data/modern';
 addDict(ModernDict);
 ```

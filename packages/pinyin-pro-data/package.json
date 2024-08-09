@@ -1,19 +1,28 @@
 {
   "name": "@pinyin-pro/data",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The data directory for pinyin-pro",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && vite build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chinese-data/pinyin-pro-data.git"
   },
   "exports": {
-    "./complete.json": "./complete.json",
-    "./modern.json": "./modern.json",
-    "./package.json": "./package.json"
+    "./*.json": "./json/*.json",
+    "./*": {
+      "import": {
+        "types": "./types/*.d.ts",
+        "default": "./dist/*.mjs"
+      },
+      "require": {
+        "types": "./types/*.d.ts",
+        "default": "./dist/*.js"
+      }
+    }
   },
   "publishConfig": {
     "access": "public"
@@ -24,5 +33,10 @@
   "bugs": {
     "url": "https://github.com/chinese-data/pinyin-pro-data/issues"
   },
-  "homepage": "https://github.com/chinese-data/pinyin-pro-data#readme"
+  "homepage": "https://github.com/chinese-data/pinyin-pro-data#readme",
+  "devDependencies": {
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  }
 }
