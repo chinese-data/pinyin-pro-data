@@ -4,7 +4,12 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   build: {
     lib: {
-      entry: ['src/chars.ts', 'src/modern.ts', 'src/complete.ts'],
+      entry: [
+        'src/chars.ts',
+        'src/modern.ts',
+        'src/complete.ts',
+        'src/traditional.ts',
+      ],
       formats: ['es', 'cjs'],
       fileName: '[name]',
     },
